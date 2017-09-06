@@ -97,7 +97,7 @@ module.exports = (env = {}) => {
         exclude: [/node_modules/],
         query: {
           plugins: ['transform-runtime', 'transform-export-extensions', 'transform-class-properties'],
-          presets: ['es2017', 'es2015', 'react', 'stage-2']
+          presets: ['env', 'react']
         }
       },
       { test: /\.css$/, loader: 'style-loader!css-loader' },
